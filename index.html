@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Praveenkumar M - Java Developer, ECE Graduate, and IoT Enthusiast. Based in Chennai, India.">
+  <meta name="keywords" content="Praveenkumar M, Java Developer, ECE Graduate, IoT Enthusiast, Chennai, Software Engineer, Portfolio, Web Developer">
+  <meta name="author" content="Praveenkumar M">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Praveenkumar M | Java Developer & IoT Enthusiast">
+  <meta property="og:description" content="Explore the portfolio of Praveenkumar M, showcasing software development, IoT systems, and academic accomplishments.">
+  <meta property="og:image" content="assets/profile.jpg">
+
+  <title>Praveenkumar M | Java Developer | ECE Graduate | IoT Enthusiast</title>
+
+  <!-- Google Fonts: Outfit (UI & Body) and Cinzel (Titles) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Particles Background Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Header & Navigation -->
+  <header id="main-header">
+    <div class="header-container">
+      <a href="#" class="logo" id="header-logo">
+        <span class="gold-text">P</span><span>K</span>
+      </a>
+      
+      <!-- Mobile Menu Toggle -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#internship" class="nav-link">Internship</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-cta">
+        <a href="assets/resume.pdf" class="btn btn-sm btn-gold" download="Praveenkumar_M_Resume.pdf" id="nav-resume-btn">
+          <i class="fa-solid fa-download"></i> Resume
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Floating Social Media Bar -->
+  <aside class="floating-socials" aria-label="Social Media Connections">
+    <div class="social-wrapper">
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="mailto:bharathpraveen502@gmail.com" class="social-icon" aria-label="Email Praveenkumar">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="tel:+919003104059" class="social-icon" aria-label="Call Praveenkumar">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+      <div class="line"></div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-subtitle">WELCOME TO MY PORTFOLIO</span>
+          <h1 class="hero-title">Praveenkumar M</h1>
+          
+          <!-- Typing effect element -->
+          <div class="typing-container">
+            <span class="typing-text" id="typed-title"></span><span class="cursor" aria-hidden="true">|</span>
+          </div>
+          
+          <p class="hero-desc">
+            An Electronics and Communication Engineering graduate passionate about building robust software solutions, exploring IoT paradigms, and writing efficient Java applications.
+          </p>
+          
+          <ul class="hero-info-list">
+            <li><i class="fa-solid fa-location-dot gold-text"></i> Chennai, Tamil Nadu, India</li>
+            <li><i class="fa-solid fa-phone gold-text"></i> <a href="tel:+919003104059">+91 9003104059</a></li>
+            <li><i class="fa-solid fa-envelope gold-text"></i> <a href="mailto:bharathpraveen502@gmail.com">bharathpraveen502@gmail.com</a></li>
+          </ul>
+          
+          <div class="hero-actions">
+            <a href="assets/resume.pdf" class="btn btn-gold" download="Praveenkumar_M_Resume.pdf" id="hero-resume-btn">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline" id="hero-contact-btn">
+              Contact Me <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="profile-card-wrapper" id="profile-card-3d">
+            <div class="profile-glow"></div>
+            <div class="profile-card">
+              <img src="assets/profile.jpg" alt="Praveenkumar M - Portrait" class="profile-img" id="profile-img">
+              <div class="profile-badge">
+                <span class="gold-text"><i class="fa-solid fa-code"></i> ECE & Java</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down-indicator">
+        <a href="#about" aria-label="Scroll down to About Me">
+          <span class="mouse-wheel"></span>
+          <span class="arrow-down"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Discovery</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="gold-line"></div>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-info">
+            <h3>Bridging Electronics & Software Development</h3>
+            <p>
+              I am an Electronics and Communication Engineering graduate with a strong foundation in software engineering principles. My academic background has equipped me with system-level understanding, while my self-driven training in **Core Java**, **Object-Oriented Programming (OOP)**, and **Database Management** allows me to design and develop structured software solutions.
+            </p>
+            <p>
+              With expertise spanning the Java Collections Framework, JDBC database connectivity, exception handling, and basic web technologies, I focus on writing clean, readable, and highly maintainable code. I love solving problems, combining hardware with cloud systems through **Internet of Things (IoT)** projects, and continuously learning emerging tech stacks.
+            </p>
+            
+            <!-- Achievements Counters Grid -->
+            <div class="counters-grid">
+              <div class="counter-card glass-panel">
+                <div class="counter-num" data-target="10">0</div>
+                <div class="counter-label">Academic Projects</div>
+              </div>
+              <div class="counter-card glass-panel">
+                <div class="counter-num" data-target="500">0</div>
+                <div class="counter-label">Java Coding Hours</div>
+              </div>
+              <div class="counter-card glass-panel">
+                <div class="counter-num" data-target="2">0</div>
+                <div class="counter-label">Technical Certifications</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-highlights-wrapper">
+            <div class="highlights-card glass-panel">
+              <h4 class="gold-text"><i class="fa-solid fa-graduation-cap"></i> Core Strengths</h4>
+              <ul class="highlights-list">
+                <li>
+                  <strong>Object-Oriented Programming:</strong> Crafting modular code architectures using OOP principles.
+                </li>
+                <li>
+                  <strong>Database Systems:</strong> Storing and querying relational data efficiently using MySQL.
+                </li>
+                <li>
+                  <strong>IoT Integration:</strong> Interfacing physical microcontrollers with cloud dashboards and APIs.
+                </li>
+                <li>
+                  <strong>Analytical Thinking:</strong> Breaking down complex problems into systematic programmatic steps.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Competencies</span>
+          <h2 class="section-title">Technical Expertise</h2>
+          <div class="gold-line"></div>
+        </div>
+        
+        <div class="skills-wrapper">
+          <!-- Skill Category: Java & Programming -->
+          <div class="skill-category glass-panel">
+            <div class="category-header">
+              <i class="fa-brands fa-java category-icon"></i>
+              <h3>Programming & Java</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Core Java</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar" data-progress="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">OOP Concepts</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar" data-progress="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Collections Framework</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar" data-progress="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Exception & String Handling</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar" data-progress="80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category: Database -->
+          <div class="skill-category glass-panel">
+            <div class="category-header">
+              <i class="fa-solid fa-database category-icon"></i>
+              <h3>Database Management</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar" data-progress="80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">SQL Queries</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar" data-progress="80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JDBC (Java Database Connectivity)</span>
+                  <span class="skill-pct">75%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar" data-progress="75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category: Tools & IDEs -->
+          <div class="skill-category glass-panel">
+            <div class="category-header">
+              <i class="fa-solid fa-laptop-code category-icon"></i>
+              <h3>Development Tools</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Eclipse IDE</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar" data-progress="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">IntelliJ IDEA</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar" data-progress="80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Web Technologies (HTML, CSS, JS)</span>
+                  <span class="skill-pct">70%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar" data-progress="70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category: Hardware & IoT -->
+          <div class="skill-category glass-panel">
+            <div class="category-header">
+              <i class="fa-solid fa-microchip category-icon"></i>
+              <h3>Hardware & IoT</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">IoT (Internet of Things)</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar" data-progress="80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Embedded Systems</span>
+                  <span class="skill-pct">75%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar" data-progress="75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Problem Solving</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar" data-progress="85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internship" class="section internship-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Experience</span>
+          <h2 class="section-title">Internship</h2>
+          <div class="gold-line"></div>
+        </div>
+        
+        <div class="timeline-container">
+          <div class="timeline-glow-line"></div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">July 2025 – August 2025</div>
+            <div class="timeline-content glass-panel">
+              <div class="intern-header">
+                <div>
+                  <h3 class="intern-title">Embedded System With IoT Intern</h3>
+                  <h4 class="intern-company gold-text">GB Tech Corp</h4>
+                  <p class="intern-location"><i class="fa-solid fa-location-dot"></i> Tambaram West, Chennai</p>
+                </div>
+                <div class="intern-logo-box">
+                  <i class="fa-solid fa-microchip"></i>
+                </div>
+              </div>
+              <hr class="card-divider">
+              <ul class="responsibilities-list">
+                <li>
+                  <i class="fa-solid fa-chevron-right gold-text"></i>
+                  <span>Worked actively on Embedded System Design, focusing on hardware-firmware integration.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right gold-text"></i>
+                  <span>Developed IoT-based smart solutions to transmit sensor inputs to remote cloud systems.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right gold-text"></i>
+                  <span>Conducted multi-sensor integration (temperature, moisture, motion sensors) and performed troubleshooting.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right gold-text"></i>
+                  <span>Optimized real-time data transmission protocols to enhance latency and reduce power consumption in microcontroller boards.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Showcase</span>
+          <h2 class="section-title">Key Projects</h2>
+          <div class="gold-line"></div>
+        </div>
+        
+        <div class="projects-grid">
+          <!-- Project Card -->
+          <div class="project-card glass-panel" id="project-card-tilt">
+            <div class="project-img-wrapper">
+              <img src="assets/farming_robot.jpg" alt="AI Farming Robot" class="project-img">
+              <div class="project-img-overlay"></div>
+              <div class="project-tech-badges">
+                <span class="badge">Python</span>
+                <span class="badge">IoT</span>
+                <span class="badge">Arduino</span>
+                <span class="badge">Sensors</span>
+                <span class="badge">Image Processing</span>
+              </div>
+            </div>
+            
+            <div class="project-content">
+              <span class="project-type gold-text"><i class="fa-solid fa-robot"></i> Embedded & AI Project</span>
+              <h3 class="project-title">AI Farming Robot for Plant Disease Detection & Soil Monitoring</h3>
+              <p class="project-desc">
+                An autonomous agricultural robot integrating physical sensor readings with computer vision to automate farm monitoring and crop health maintenance.
+              </p>
+              
+              <div class="project-features">
+                <h4>Core Features:</h4>
+                <ul>
+                  <li><i class="fa-solid fa-check gold-text"></i> <span>Plant disease detection using machine learning models in Python.</span></li>
+                  <li><i class="fa-solid fa-check gold-text"></i> <span>Soil monitoring utilizing moisture, pH, and temperature sensors.</span></li>
+                  <li><i class="fa-solid fa-check gold-text"></i> <span>Automated weed cutting mechanism triggered by vision detection.</span></li>
+                  <li><i class="fa-solid fa-check gold-text"></i> <span>Real-time IoT dashboard for remote farm analytics and system control.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Academic Credentials</span>
+          <h2 class="section-title">Education & Certifications</h2>
+          <div class="gold-line"></div>
+        </div>
+        
+        <div class="education-grid">
+          <!-- Education Timeline -->
+          <div class="education-timeline-wrapper">
+            <div class="timeline-glow-line"></div>
+            
+            <!-- Degree -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2022 – 2026</div>
+              <div class="timeline-content glass-panel">
+                <span class="edu-type gold-text">Bachelor of Engineering</span>
+                <h3 class="edu-title">Electronics and Communication Engineering (ECE)</h3>
+                <h4 class="edu-inst">Apollo Engineering College</h4>
+                <div class="edu-score-badge">CGPA: 8.2</div>
+              </div>
+            </div>
+
+            <!-- HSC -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2020 – 2022</div>
+              <div class="timeline-content glass-panel">
+                <span class="edu-type gold-text">Higher Secondary (HSC)</span>
+                <h3 class="edu-title">SNS Matriculation Higher Secondary School</h3>
+                <div class="edu-score-badge">Percentage: 64.7%</div>
+              </div>
+            </div>
+
+            <!-- SSLC -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2020</div>
+              <div class="timeline-content glass-panel">
+                <span class="edu-type gold-text">Secondary School Leaving Certificate (SSLC)</span>
+                <h3 class="edu-title">SNS Matriculation Higher Secondary School</h3>
+                <div class="edu-score-badge">Percentage: 75%</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications Card -->
+          <div class="certifications-wrapper">
+            <div class="certifications-card glass-panel">
+              <h3 class="cert-card-title"><i class="fa-solid fa-award gold-text"></i> Professional Certifications</h3>
+              <div class="cert-item">
+                <div class="cert-icon-box">
+                  <i class="fa-solid fa-certificate"></i>
+                </div>
+                <div class="cert-details">
+                  <h4>Embedded System With IoT</h4>
+                  <p class="cert-issuer">Issued by: GB Tech Corp, Chennai</p>
+                  <p class="cert-desc">Detailed training in microcontrollers, sensor networking, communications, firmware development, and IoT cloud platforms.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Contact</h2>
+          <div class="gold-line"></div>
+        </div>
+        
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info-panel">
+            <h3>Let's Collaborate</h3>
+            <p>
+              I am actively looking for software developer opportunities (especially in Java development, IoT application development, and systems engineering). Let's connect!
+            </p>
+            
+            <div class="contact-details-list">
+              <div class="contact-detail-item glass-panel">
+                <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="detail-text">
+                  <span>Call Me</span>
+                  <a href="tel:+919003104059">+91 9003104059</a>
+                </div>
+              </div>
+              <div class="contact-detail-item glass-panel">
+                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="detail-text">
+                  <span>Email Me</span>
+                  <a href="mailto:bharathpraveen502@gmail.com">bharathpraveen502@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-detail-item glass-panel">
+                <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="detail-text">
+                  <span>Location</span>
+                  <p>Chennai, Tamil Nadu, India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-panel glass-panel">
+            <form id="portfolio-contact-form" novalidate>
+              <div class="form-group">
+                <label for="form-name">Name</label>
+                <input type="text" id="form-name" placeholder="Your Name" required>
+                <span class="error-msg" id="name-error">Name is required</span>
+              </div>
+              
+              <div class="form-group">
+                <label for="form-email">Email Address</label>
+                <input type="email" id="form-email" placeholder="username@example.com" required>
+                <span class="error-msg" id="email-error">Enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-phone">Phone Number (Optional)</label>
+                <input type="tel" id="form-phone" placeholder="e.g. +91 9876543210">
+                <span class="error-msg" id="phone-error">Enter a valid phone number</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" rows="5" placeholder="Write your message here..." required></textarea>
+                <span class="error-msg" id="message-error">Message cannot be empty</span>
+              </div>
+
+              <button type="submit" class="btn btn-gold btn-full" id="form-submit-btn">
+                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+              </button>
+              
+              <div class="form-feedback" id="form-feedback-message"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#" class="logo footer-logo">
+          <span class="gold-text">P</span><span>K</span>
+        </a>
+        <p>Designing modern software and hardware intersections.</p>
+      </div>
+      
+      <div class="footer-links">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#internship">Internship</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Praveenkumar M. All rights reserved.</p>
+        <p class="footer-credit">Handcrafted with <i class="fa-solid fa-heart gold-text"></i> in Chennai, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button with SVG Circular Progress -->
+  <button id="back-to-top" aria-label="Scroll back to top">
+    <svg class="progress-ring" width="48" height="48">
+      <circle class="progress-ring-circle" stroke="#e6b800" stroke-width="3" fill="transparent" r="21" cx="24" cy="24"/>
+    </svg>
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Custom JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
